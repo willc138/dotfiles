@@ -1,0 +1,15 @@
+# Ignore all in top level (setup whitelist)
+/*
+
+# Whitelist
+!.gitconfig
+!.gitignore
+!.vimrc
+!.zshrc
+!.dircolors
+!.dircolors/**
+!.git-scripts
+!.git-scripts/**
+!.vim
+!.vim/**
+
