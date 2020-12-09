@@ -2,6 +2,7 @@
 /*
 
 # Whitelist
+!.README.md
 !.gitconfig
 !.gitignore
 !.vimrc
