@@ -1,7 +1,7 @@
 [credential]
 	helper = manager
 [core]
-	autocrlf = true
+	autocrlf = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = vim
 [alias]
@@ -10,8 +10,8 @@
 	logo = log --oneline
 	lg = log --all --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	lgb = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
-    setcrlf="git config --global core.autocrlf true"
-    unsetcrlf="git config --global core.autocrlf false"
+    setcrlf="config --global core.autocrlf true"
+    unsetcrlf="config --global core.autocrlf false"
 [difftool]
 	trustExitCode = true
 [mergetool]
@@ -32,3 +32,7 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[pull]
+	rebase = false
+[user]
+	name = willc138
