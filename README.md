@@ -12,5 +12,6 @@ and PlugInstall should be run:
 
 ```zsh
 vim +PlugInstall +qall
+```
 
 This does not set up .ssh and should be done seperately.
