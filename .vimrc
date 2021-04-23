@@ -1,7 +1,5 @@
 set nocompatible
 syntax on
-colorscheme gruvbox
-set background=dark
 set number
 set showcmd
 set showmode
@@ -13,35 +11,25 @@ set hlsearch
 set mouse=a
 set tabstop=4
 set backspace=indent,eol,start
-set omnifunc=syntaxcomplete#Complete
 set clipboard=unnamedplus
 set clipboard=unnamed
+set completeopt+=popup
 
-runtime ftplugin/man.vim
+let &t_ti.="\<Esc>[1 q"
+let &t_SI.="\<Esc>[5 q"
+let &t_EI.="\<Esc>[1 q"
+let &t_te.="\<Esc>[0 q"
 
-execute pathogen#infect()
 filetype plugin on
 
-function! Smart_TabComplete()
-  let line = getline('.')
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'jez/vim-superman'
+Plug 'vim-airline/vim-airline'
+" Plug 'valloric/youcompleteme'
+call plug#end()
 
-  let substr = strpart(line, -1, col('.')+1)
+colorscheme gruvbox
+set background=dark
 
-
-  let substr = matchstr(substr, "[^ \t]*$")
-  if (strlen(substr)==0)
-    return "\<tab>"
-  endif
-  let has_period = match(substr, '\.') != -1
-  let has_slash = match(substr, '\/') != -1
-  if (!has_period && !has_slash)
-    return "\<C-X>\<C-P>"
-  elseif ( has_slash )
-    return "\<C-X>\<C-F>"
-  else
-    return "\<C-X>\<C-O>"
-  endif
-endfunction
-
-inoremap <c-i> <c-r>=Smart_TabComplete()<CR>
-
+let g:airline#extensions#tabline#enabled = 1
