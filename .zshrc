@@ -2,8 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/william/.oh-my-zsh"
-export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:$HOME/.vim/plugged/vim-superman/bin"
 export PATH="$PATH:$HOME/.git-scripts"
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)" > /dev/null 2>&1
 eval `dircolors ~/.dircolors/dircolors.256dark`
