@@ -13,4 +13,6 @@
 !.git-scripts/**
 !.vim
 !.vim/**
+!.ssh
+!.ssh/**
 

@@ -14,4 +14,4 @@ and PlugInstall should be run:
 vim +PlugInstall +qall
 ```
 
-This does not set up .ssh and should be done seperately.
+This does not set up ssh keys, but does setup some ssh configuration.
