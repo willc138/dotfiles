@@ -26,7 +26,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'jez/vim-superman'
 Plug 'vim-airline/vim-airline'
-" Plug 'valloric/youcompleteme'
 call plug#end()
 
 colorscheme gruvbox
