@@ -33,3 +33,4 @@ colorscheme gruvbox
 set background=dark
 
 let g:airline#extensions#tabline#enabled = 1
+autocmd FileType yaml setlocal tabstop=2 softtabstop=-1 shiftwidth=2 expandtab indentkeys-=0#
