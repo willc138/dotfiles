@@ -1,13 +1,9 @@
 # dotfiles
-Required packages: git, vim, zsh, man, openssh and a powerline font (e.g. adobe-source-code-pro-fonts)
+Required packages: git, vim, zsh, man, openssh and a powerline font.
 
-This repo should be cloned after zsh is configured and oh-my-zsh is installed.
+This repo should be cloned after oh-my-zsh and zsh-syntax-highlighting have been installed.
 
-After installation zsh-syntax-highlighting should be cloned
-```zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-and PlugInstall should be run:
+After installation, PlugInstall should be run:
 
 ```zsh
 vim +PlugInstall +qall
