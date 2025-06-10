@@ -36,6 +36,7 @@ alias dcup="sudo docker compose up -d --remove-orphans"
 alias dcdown="sudo docker compose down --remove-orphans"
 alias dcpull="sudo docker compose pull"
 alias dcres="sudo docker compose restart"
+alias dcstop="sudo docker compose stop"
 
 # Syntax highlighting.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
